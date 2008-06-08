@@ -1,9 +1,9 @@
 #!/usr/bin/env perl
 
-#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Perl-Critic-Compatibility/t/author/distribution.t $
-#     $Date: 2008-04-13 13:21:52 -0500 (Sun, 13 Apr 2008) $
+#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Perl-Critic-Compatibility/xt/author/pod_spelling.t $
+#     $Date: 2008-05-09 10:51:28 -0500 (Fri, 09 May 2008) $
 #   $Author: clonezone $
-# $Revision: 2221 $
+# $Revision: 2333 $
 
 # Taken from
 # http://www.chrisdolan.net/talk/index.php/2005/11/14/private-regression-tests/.
@@ -15,8 +15,15 @@ use warnings;
 
 use version; our $VERSION = qv('v1.0.0');
 
-# No POD coverage due to complaints about builtins when using Fatal.
-use Test::Distribution ( distversion => 1, not => 'podcover' );
+use Test::More;
+use Test::Spelling;
+
+set_spell_cmd('aspell -l en list');
+add_stopwords(<DATA>);
+all_pod_files_spelling_ok();
+
+__DATA__
+=cut
 
 # setup vim: set filetype=perl tabstop=4 softtabstop=4 expandtab :
 # setup vim: set shiftwidth=4 shiftround textwidth=78 nowrap autoindent :

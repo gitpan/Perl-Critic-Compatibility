@@ -1,7 +1,7 @@
 #      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Perl-Critic-Compatibility/lib/Perl/Critic/Policy/Compatibility/ProhibitThreeArgumentOpen.pm $
-#     $Date: 2008-04-13 19:44:58 -0500 (Sun, 13 Apr 2008) $
+#     $Date: 2008-06-07 22:26:28 -0500 (Sat, 07 Jun 2008) $
 #   $Author: clonezone $
-# $Revision: 2230 $
+# $Revision: 2425 $
 
 package Perl::Critic::Policy::Compatibility::ProhibitThreeArgumentOpen;
 
@@ -10,7 +10,7 @@ use 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '0.999_001';
+our $VERSION = '1.000';
 
 use Readonly ();
 use version ();
@@ -116,7 +116,11 @@ L<Perl::Critic>
 
 =head1 INCOMPATIBILITIES
 
-None reported.
+This policy directly contradicts
+L<Perl::Critic::Policy::InputOutput::ProhibitTwoArgOpen>.  If you don't
+declare perl version requirements, then you cannot have both of these
+policies enabled at the same time (unless you like getting
+violations).
 
 
 =head1 BUGS AND LIMITATIONS

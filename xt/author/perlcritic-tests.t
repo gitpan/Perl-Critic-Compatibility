@@ -1,9 +1,9 @@
 #!/usr/bin/env perl
 
-#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Perl-Critic-Compatibility/t/author/perlcritic-code.t $
-#     $Date: 2008-04-13 13:21:52 -0500 (Sun, 13 Apr 2008) $
+#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Perl-Critic-Compatibility/xt/author/perlcritic-tests.t $
+#     $Date: 2008-05-09 10:51:28 -0500 (Fri, 09 May 2008) $
 #   $Author: clonezone $
-# $Revision: 2221 $
+# $Revision: 2333 $
 
 use 5.006;
 
@@ -14,10 +14,10 @@ use version; our $VERSION = qv('v1.0.0');
 
 use Test::Perl::Critic (
     -severity => 1,
-    -profile => 't/author/perlcriticrc-code'
+    -profile => 'xt/author/perlcriticrc-tests'
 );
 
-all_critic_ok( qw< lib bin > );
+all_critic_ok( qw< t xt > );
 
 # setup vim: set filetype=perl tabstop=4 softtabstop=4 expandtab :
 # setup vim: set shiftwidth=4 shiftround textwidth=78 nowrap autoindent :

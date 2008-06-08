@@ -1,7 +1,7 @@
 #      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Perl-Critic-Compatibility/lib/Perl/Critic/Compatibility.pm $
-#     $Date: 2008-04-13 19:44:58 -0500 (Sun, 13 Apr 2008) $
+#     $Date: 2008-06-07 22:26:28 -0500 (Sat, 07 Jun 2008) $
 #   $Author: clonezone $
-# $Revision: 2230 $
+# $Revision: 2425 $
 
 package Perl::Critic::Compatibility;
 
@@ -10,7 +10,7 @@ use 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '0.999_001';
+our $VERSION = '1.000';
 
 1; # Magic true value required at end of module
 
@@ -20,7 +20,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Compatibility - Policies for Perl::Critic concerned with compatibility with older versions of Perl.
+Perl::Critic::Compatibility - Policies for Perl::Critic concerned with compatibility with various versions of Perl.
 
 =head1 AFFILIATION
 
@@ -39,8 +39,9 @@ This document describes Perl::Critic::Compatibility version 1.0.0.
 =head1 SYNOPSIS
 
 Some L<Perl::Critic> policies that will help you keep your code
-compatible with older versions of Perl, regardless of the version that
-you're developing with.
+compatible with other versions of Perl, regardless of the version that
+you're developing with.  This includes both backward and forward
+compatibility.
 
 
 =head1 DESCRIPTION
@@ -48,6 +49,12 @@ you're developing with.
 The included policies are:
 
 =over
+
+=item L<Perl::Critic::Policy::Compatibility::ProhibitColonsInBarewordHashKeys>
+
+Perls after 5.8 don't support having colons in unquoted hash keys.
+[Severity: 5]
+
 
 =item L<Perl::Critic::Policy::Compatibility::ProhibitThreeArgumentOpen>
 
