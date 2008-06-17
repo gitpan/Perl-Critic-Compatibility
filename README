@@ -1,4 +1,4 @@
-Perl-Critic-Compatibility version 0.999_001.
+Perl-Critic-Compatibility version 1.001.
 
 This distribution provides several Perl::Critic policies related to
 compatibility with older versions of Perl.

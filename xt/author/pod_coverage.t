@@ -10,7 +10,7 @@ use 5.006;
 use strict;
 use warnings;
 
-use version; our $VERSION = qv('v1.0.0');
+use version; our $VERSION = qv('v1.1');
 
 use Test::More;
 use Test::Pod::Coverage;

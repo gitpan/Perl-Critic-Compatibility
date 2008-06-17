@@ -2,9 +2,7 @@ Build.PL
 Changes
 lib/Perl/Critic/Compatibility.pm
 lib/Perl/Critic/Policy/Compatibility/ProhibitThreeArgumentOpen.pm
-Makefile.PL
 MANIFEST			This list of files
-META.yml
 README
 t/Compatibility/ProhibitThreeArgumentOpen.run
 t/policies.t
@@ -20,3 +18,5 @@ xt/author/pod_coverage.t
 xt/author/pod_spelling.t
 xt/author/pod_syntax.t
 xt/author/README
+Makefile.PL
+META.yml

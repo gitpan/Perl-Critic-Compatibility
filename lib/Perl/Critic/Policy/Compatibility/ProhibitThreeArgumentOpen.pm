@@ -10,7 +10,7 @@ use 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '1.000';
+our $VERSION = '1.001';
 
 use Readonly ();
 use version ();
@@ -67,7 +67,7 @@ This policy is part of L<Perl::Critic::Compatibility>.
 
 This document describes
 Perl::Critic::Policy::Compatibility::ProhibitThreeArgumentOpen version
-1.000.
+1.001.
 
 
 =head1 SYNOPSIS

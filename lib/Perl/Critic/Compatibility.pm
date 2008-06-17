@@ -10,7 +10,7 @@ use 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '1.000';
+our $VERSION = '1.001';
 
 1; # Magic true value required at end of module
 
@@ -33,7 +33,7 @@ grouping.
 
 =head1 VERSION
 
-This document describes Perl::Critic::Compatibility version 1.0.0.
+This document describes Perl::Critic::Compatibility version 1.001.
 
 
 =head1 SYNOPSIS
